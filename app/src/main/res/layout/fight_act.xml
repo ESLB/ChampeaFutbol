@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fight.FightActivity">
+
+    <TextView
+        android:id="@+id/txt_Cambiar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Which team will win??"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.086" />
+
+    <ImageView
+        android:id="@+id/img_local"
+        android:layout_width="0dp"
+        android:layout_height="126dp"
+        android:layout_marginBottom="140dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="140dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button3"
+        app:layout_constraintEnd_toStartOf="@+id/img_visit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/btn_star" />
+
+    <ImageView
+        android:id="@+id/img_visit"
+        android:layout_width="0dp"
+        android:layout_height="121dp"
+        android:layout_marginBottom="37dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="39dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_visit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_local"
+        app:layout_constraintTop_toTopOf="@+id/textView6"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <TextView
+        android:id="@+id/txt_local"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="18dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/img_local"
+        app:layout_constraintTop_toBottomOf="@+id/img_local" />
+
+    <TextView
+        android:id="@+id/txt_visit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_local"
+        app:layout_constraintStart_toStartOf="@+id/img_visit"
+        app:layout_constraintTop_toTopOf="@+id/txt_local" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        android:layout_marginEnd="13dp"
+        android:text="Local"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toStartOf="@+id/button4" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginStart="4dp"
+        android:text="Visitante"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintStart_toEndOf="@+id/button4" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Empate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="Local"
+        app:layout_constraintBottom_toTopOf="@+id/img_local"
+        app:layout_constraintStart_toStartOf="@+id/txt_Cambiar" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="26dp"
+        android:text="Visitante"
+        app:layout_constraintStart_toStartOf="@+id/img_visit"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Cambiar" />
+</android.support.constraint.ConstraintLayout>
